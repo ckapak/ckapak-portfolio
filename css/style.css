@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  font-family: sans-serif;
+  flex-direction: column;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: darkmagenta;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: white;
+}
+
+/* skills table */
+
+/* .container-skills {
+  background-color: red;
+} */
+
+.row-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  /* background-color: blue; */
+}
+
+.column-skills {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  /* background-color: blueviolet; */
+}
+
+/* projects section */
+
+.row-projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: blue;
+} 
+
+.column-projects {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  background-color: blueviolet;
+  height: 100wh;
+}
+
+.column-projects .projects {
+  width: 50%;
+  border-style: solid;
+  padding: 5px;
+}
