@@ -4,11 +4,15 @@
 
 body {
   display: flex;
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
   padding: 0;
   font-family: sans-serif;
   flex-direction: column;
+}
+
+.header {
+  text-align: center;
 }
 
 /* navbar */
@@ -17,6 +21,9 @@ body {
   display: flex;
   justify-content: center;
   background-color: darkmagenta;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .nav-links {
@@ -78,4 +85,5 @@ body {
   width: 50%;
   border-style: solid;
   padding: 5px;
+  text-align: center;
 }
