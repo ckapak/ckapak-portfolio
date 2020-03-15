@@ -2,17 +2,17 @@
   box-sizing: border-box;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  display: flex;
   text-align: left;
   margin: 0 auto;
   padding: 0;
   font-family: sans-serif;
-  flex-direction: column;
-}
-
-.header {
-  text-align: center;
+  position: relative;
 }
 
 /* navbar */
@@ -20,10 +20,11 @@ body {
 .navbar {
   display: flex;
   justify-content: center;
-  background-color: darkmagenta;
-  position: fixed;
+  background-color: rgb(29, 26, 211);
+  position: absolute;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .nav-links {
@@ -42,11 +43,56 @@ body {
   background-color: white;
 }
 
-/* skills table */
+/* parallax */
 
-/* .container-skills {
-  background-color: red;
-} */
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  padding-top: 70px;
+}
+
+.header {
+  text-align: center;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+  
+  /* For text formatting. */
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+.parallax::after {
+  /* background-repeat: no-repeat; */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  /* transform: translateZ(-1px) scale(1.5); */
+  background-attachment: fixed;
+  background-size: 100%;
+  z-index: -1;
+}
+
+.static {
+  background: rgb(12, 12, 100);
+}
+
+.bg1::after {
+  background-image: url('https://cdn.wallpapersafari.com/70/9/GLSsU7.jpg');
+}
+
+/* skills table */
 
 .row-skills {
   display: flex;
@@ -61,29 +107,4 @@ body {
   justify-content: space-around;
   flex: 1;
   /* background-color: blueviolet; */
-}
-
-/* projects section */
-
-.row-projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  background-color: blue;
-} 
-
-.column-projects {
-  display: flex;
-  justify-content: space-around;
-  flex: 1;
-  background-color: blueviolet;
-  height: 100wh;
-}
-
-.column-projects .projects {
-  width: 50%;
-  border-style: solid;
-  padding: 5px;
-  text-align: center;
 }
