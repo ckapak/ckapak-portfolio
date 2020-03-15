@@ -11,7 +11,7 @@ body {
   text-align: left;
   margin: 0 auto;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
   position: relative;
 }
 
@@ -20,7 +20,7 @@ body {
 .navbar {
   display: flex;
   justify-content: center;
-  background-color: rgb(29, 26, 211);
+  background-color: #CC3357;
   position: absolute;
   top: 0;
   width: 100%;
@@ -49,6 +49,7 @@ body {
   overflow-y: auto;
   /* perspective: 2px; */
   padding-top: 70px;
+  margin: 0 50px 0 50px;
 }
 
 .header {
@@ -92,16 +93,35 @@ body {
     padding: 30px;
     /* height: 300px; */
     width: 500px;
-    background-color: red;
+    background-color: #33CCA8;
     margin: 40px;
+    border-radius: 10px;
   }
 
   .screenshots {
     height: 250px;
-    width: 400px;
+    width: 435px;
     align-items: center;
+    border-radius: 10px;
   }
 
+
+  .github-img {
+    height: 50px;
+    width: 50px;
+  }
+
+
+  .link-img {
+    height: 50px;
+    width: 50px;
+  }
+
+
+
+
+
+/* parallax */
 
 /* 
 .section {
