@@ -43,53 +43,16 @@ body {
   background-color: white;
 }
 
-/* parallax */
-
 .wrapper {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  perspective: 2px;
+  /* perspective: 2px; */
   padding-top: 70px;
 }
 
 .header {
   text-align: center;
-}
-
-.section {
-  position: relative;
-  height: 100vh;
-  
-  /* For text formatting. */
-  display: flex;
-  /* align-items: center;
-  justify-content: center; */
-  color: white;
-  text-shadow: 0 0 5px #000;
-}
-
-.parallax::after {
-  /* background-repeat: no-repeat; */
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  
-  /* transform: translateZ(-1px) scale(1.5); */
-  background-attachment: fixed;
-  background-size: 100%;
-  z-index: -1;
-}
-
-.static {
-  background: rgb(12, 12, 100);
-}
-
-.bg1::after {
-  background-image: url('https://cdn.wallpapersafari.com/70/9/GLSsU7.jpg');
 }
 
 /* skills table */
@@ -108,3 +71,69 @@ body {
   flex: 1;
   /* background-color: blueviolet; */
 }
+
+/* projects */
+
+.container-projects {
+    /* height: 100vh;
+    width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .column-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .projects {
+    padding: 30px;
+    /* height: 300px; */
+    width: 500px;
+    background-color: red;
+    margin: 40px;
+  }
+
+  .screenshots {
+    height: 250px;
+    width: 400px;
+    align-items: center;
+  }
+
+
+/* 
+.section {
+  position: relative;
+  height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+.parallax::after {
+  background-repeat: no-repeat;
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  transform: translateZ(-1px) scale(1.5);
+  background-attachment: fixed;
+  background-size: 100%;
+  z-index: -1;
+}
+
+.static {
+  background: rgb(12, 12, 100);
+}
+
+.bg1::after {
+  background-image: url('https://cdn.wallpapersafari.com/70/9/GLSsU7.jpg');
+} */
