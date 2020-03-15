@@ -11,29 +11,22 @@ body {
   text-align: left;
   margin: 0 auto;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Oswald', sans-serif;
   position: relative;
+  background-color: #ff0060;
 }
 
-h1, h2, h3 {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 30px;
-  color: rgb(54, 52, 52);
+p {
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-/* arrow */
-
-
-
-
-
 
 /* navbar */
 
 .navbar {
   display: flex;
   justify-content: center;
-  background-color: #CC3357;
+  background-color: black;
   position: absolute;
   top: 0;
   width: 100%;
@@ -67,6 +60,18 @@ h1, h2, h3 {
 
 .header {
   text-align: center;
+  color: azure;
+  /* background-color: white; */
+}
+
+.big-guineas {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #ff0060;
+  height: 400px;
 }
 
 /* skills table */
@@ -89,8 +94,6 @@ h1, h2, h3 {
 /* projects */
 
 .container-projects {
-    /* height: 100vh;
-    width: 100vw; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,7 +107,6 @@ h1, h2, h3 {
   
   .projects {
     padding: 30px;
-    /* height: 300px; */
     width: 500px;
     background-color: #33CCA8;
     margin: 40px;
@@ -118,7 +120,7 @@ h1, h2, h3 {
     border-radius: 10px;
   }
 
-  .github-img, .link-img {
+  .github-img, .link-img, .email-img, .linkedin-img {
     height: 50px;
     width: 50px;
   }
