@@ -11,7 +11,6 @@ body {
   text-align: left;
   margin: 0 auto;
   padding: 0;
-  /* font-family: 'Roboto', sans-serif; */
   font-family: 'Oswald', sans-serif;
   position: relative;
   background-color: #ff0060;
@@ -36,11 +35,14 @@ p {
 .nav-links {
   display: flex;
   list-style: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item a {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 12px;
   text-decoration: none;
   color: white;
 }
@@ -54,14 +56,44 @@ p {
   overflow-x: hidden;
   overflow-y: auto;
   /* perspective: 2px; */
-  padding-top: 70px;
+  padding-top: 90px;
   margin: 0 50px 0 50px;
+}
+
+section {
+  background-color: white;
+  padding: 30px;
+  margin: 0 10px 20px 0;
+  border-radius: 10px;
 }
 
 .header {
   text-align: center;
-  color: azure;
-  /* background-color: white; */
+  color: white;
+  padding: 30px;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.logo {
+  margin: 10px;
+  height: 50px;
+  width: 47px;
+}
+
+h1 {
+  font-size: 70px;
+  margin: 0;
+  line-height: 80px;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0 auto;
 }
 
 .big-guineas {
@@ -120,10 +152,10 @@ p {
     border-radius: 10px;
   }
 
-  .github-img, .link-img, .email-img, .linkedin-img {
+  /* .github-img, .link-img, .email-img, .linkedin-img {
     height: 50px;
     width: 50px;
-  }
+  } */
 
 /* parallax */
 
