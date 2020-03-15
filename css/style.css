@@ -5,15 +5,31 @@
 html {
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: left;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-family: 'Oswald', sans-serif;
   position: relative;
   background-color: #ff0060;
+}
+
+body:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  background: url(london.jpg) no-repeat center center fixed;
 }
 
 p {
@@ -23,11 +39,14 @@ p {
 /* navbar */
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   display: flex;
   justify-content: center;
   background-color: black;
-  position: absolute;
-  top: 0;
   width: 100%;
   z-index: 100;
 }
@@ -52,25 +71,18 @@ p {
 }
 
 .wrapper {
-  height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  /* perspective: 2px; */
-  padding-top: 90px;
-  margin: 0 50px 0 50px;
-}
-
-section {
-  background-color: white;
-  padding: 30px;
-  margin: 0 10px 20px 0;
-  border-radius: 10px;
+  padding-top: 40px;
+  /* margin: 0 50px 0 50px; */
+  max-width: 1000px;
+  z-index: 1;
 }
 
 .header {
   text-align: center;
   color: white;
-  padding: 30px;
+  padding: 90px;
 }
 
 .header-icons {
@@ -82,7 +94,7 @@ section {
 .logo {
   margin: 10px;
   height: 50px;
-  width: 47px;
+  width: 49px;
 }
 
 h1 {
@@ -93,7 +105,7 @@ h1 {
 
 h2 {
   font-size: 30px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .big-guineas {
@@ -104,6 +116,13 @@ h2 {
   left: 0;
   background-color: #ff0060;
   height: 400px;
+}
+
+section {
+  background-color: white;
+  padding: 30px;
+  margin: 0 10px 20px 0;
+  border-radius: 10px;
 }
 
 /* skills table */
@@ -139,57 +158,20 @@ h2 {
   
   .projects {
     padding: 30px;
-    width: 500px;
+    width: 385px;
     background-color: #33CCA8;
     margin: 40px;
     border-radius: 10px;
   }
 
   .screenshots {
-    height: 250px;
-    width: 435px;
+    height: 190px;
+    width: 320px;
     align-items: center;
     border-radius: 10px;
   }
 
-  /* .github-img, .link-img, .email-img, .linkedin-img {
+  .github-img, .link-img, .email-img, .linkedin-img {
     height: 50px;
     width: 50px;
-  } */
-
-/* parallax */
-
-/* 
-.section {
-  position: relative;
-  height: 100vh;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000;
-}
-
-.parallax::after {
-  background-repeat: no-repeat;
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  
-  transform: translateZ(-1px) scale(1.5);
-  background-attachment: fixed;
-  background-size: 100%;
-  z-index: -1;
-}
-
-.static {
-  background: rgb(12, 12, 100);
-}
-
-.bg1::after {
-  background-image: url('https://cdn.wallpapersafari.com/70/9/GLSsU7.jpg');
-} */
+  }
