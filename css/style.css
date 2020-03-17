@@ -126,15 +126,14 @@ section {
   background-color: #33CCA8;
   margin: 40px;
   border-radius: 10px; }
+  .projects > .project-links {
+    display: flex;
+    justify-content: center; }
 
 .screenshots {
   height: 190px;
   width: 320px;
   align-items: center;
   border-radius: 10px; }
-
-.github-img, .link-img, .email-img, .linkedin-img {
-  height: 50px;
-  width: 50px; }
 
 /*# sourceMappingURL=style.css.map */

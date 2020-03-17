@@ -161,6 +161,11 @@ section {
     background-color: $mint;
     margin: 40px;
     border-radius: 10px;
+
+    > .project-links {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   .screenshots {
@@ -168,9 +173,4 @@ section {
     width: 320px;
     align-items: center;
     border-radius: 10px;
-  }
-
-  .github-img, .link-img, .email-img, .linkedin-img {
-    height: 50px;
-    width: 50px;
   }
