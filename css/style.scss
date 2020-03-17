@@ -135,20 +135,11 @@ section {
 
 /* skills section */
 
-// .row-skills {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   width: 100%;
-//   background-color: blue;
-// }
-
-// .column-skills {
-//   display: flex;
-//   justify-content: space-around;
-//   flex: 1;
-//   background-color: blueviolet;
-// }
+.skills {
+  display: inline-block;
+  font-size: 80px;
+  text-align: center;
+}
 
 /* projects section */
 
