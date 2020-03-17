@@ -45,12 +45,24 @@ body {
   height: 400px;
 }
 
-.main-content {
+main {
   overflow-x: hidden;
   overflow-y: auto;
   padding-top: 40px;
   max-width: 1000px;
   z-index: 1;
+
+  > header {
+    text-align: center;
+    color: white;
+    padding: 90px;
+
+    > .icons {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+  }
 }
 
 p {
@@ -70,39 +82,27 @@ p {
   background-color: black;
   width: 100%;
   z-index: 100;
-}
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-}
+  > ul {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
 
-.nav-item a {
-  display: inline-block;
-  padding: 10px 12px;
-  text-decoration: none;
-  color: white;
-}
+    > li {
+      &:hover {
+        background-color: $mint;
+      }
 
-.nav-item:hover {
-  background-color: $mint;
-}
-
-
-
-.header {
-  text-align: center;
-  color: white;
-  padding: 90px;
-}
-
-.header-icons {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+      a {
+        display: inline-block;
+        padding: 10px 12px;
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
 }
 
 .logo {

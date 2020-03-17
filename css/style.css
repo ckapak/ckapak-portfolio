@@ -36,12 +36,20 @@ body {
   background-color: #ff0060;
   height: 400px; }
 
-.main-content {
+main {
   overflow-x: hidden;
   overflow-y: auto;
   padding-top: 40px;
   max-width: 1000px;
   z-index: 1; }
+  main > header {
+    text-align: center;
+    color: white;
+    padding: 90px; }
+    main > header > .icons {
+      display: flex;
+      justify-content: center;
+      flex-direction: row; }
 
 p {
   font-family: Arial, Helvetica, sans-serif; }
@@ -57,32 +65,19 @@ p {
   background-color: black;
   width: 100%;
   z-index: 100; }
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  font-size: 20px;
-  margin: 0;
-  padding: 0; }
-
-.nav-item a {
-  display: inline-block;
-  padding: 10px 12px;
-  text-decoration: none;
-  color: white; }
-
-.nav-item:hover {
-  background-color: #33CCA8; }
-
-.header {
-  text-align: center;
-  color: white;
-  padding: 90px; }
-
-.header-icons {
-  display: flex;
-  justify-content: center;
-  flex-direction: row; }
+  .navbar > ul {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 0; }
+    .navbar > ul > li:hover {
+      background-color: #33CCA8; }
+    .navbar > ul > li a {
+      display: inline-block;
+      padding: 10px 12px;
+      text-decoration: none;
+      color: white; }
 
 .logo {
   margin: 10px;
