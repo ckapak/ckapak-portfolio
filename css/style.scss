@@ -1,5 +1,6 @@
 $pink: #ff0060;
-$mint: #33CCA8;
+$mint: #95e5d3;
+$grey: #aaa;
 
 * {
   box-sizing: border-box;
@@ -130,7 +131,6 @@ section {
   background-color: white;
   padding: 30px;
   margin: 0 10px 20px 0;
-  border-radius: 10px;
 }
 
 /* skills section */
@@ -161,7 +161,6 @@ section {
     background-color: $mint;
     margin: 40px;
     border-radius: 10px;
-
     > .project-links {
       display: flex;
       justify-content: center;
@@ -173,4 +172,65 @@ section {
     width: 320px;
     align-items: center;
     border-radius: 10px;
+  }
+
+  // experience timeline
+
+  ul {
+    width: 650px;
+    margin: 40px auto;
+    list-style: none;
+  }
+  
+  li {
+    display: flex;
+  }
+  
+  li:last-child {
+    border: 0;
+  }
+  
+  li p {
+    display: block;
+    padding: 20px;
+    line-height: 1.4;
+  }
+  
+  li p:nth-child(1) {
+    position: relative;
+    padding-right: 25px;
+    font-size: 14px;
+    line-height: 2.5;
+    color: $grey;
+  }
+  
+  li p:nth-child(1):after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    right: -17px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 5px solid #999;
+    border-radius: 50%;
+    background: #fff;
+  }
+  
+  li:first-child p:nth-child(1):after {
+    background: $mint
+  }
+  
+  li p:nth-child(2) {
+    flex: 1;
+    font-size: 24px;
+    border-left: 5px solid #999;
+  }
+  
+  li p span {
+    display: block;
+    margin: 5px 0 0;
+    font-size: 12px;
+    font-style: italic;
+    color: $grey;
   }

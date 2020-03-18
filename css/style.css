@@ -72,7 +72,7 @@ p {
     margin: 0;
     padding: 0; }
     .navbar > ul > li:hover {
-      background-color: #33CCA8; }
+      background-color: #95e5d3; }
     .navbar > ul > li a {
       display: inline-block;
       padding: 10px 12px;
@@ -100,8 +100,7 @@ h2 {
 section {
   background-color: white;
   padding: 30px;
-  margin: 0 10px 20px 0;
-  border-radius: 10px; }
+  margin: 0 10px 20px 0; }
 
 /* skills section */
 .skills {
@@ -123,7 +122,7 @@ section {
 .projects {
   padding: 30px;
   width: 385px;
-  background-color: #33CCA8;
+  background-color: #95e5d3;
   margin: 40px;
   border-radius: 10px; }
   .projects > .project-links {
@@ -135,5 +134,55 @@ section {
   width: 320px;
   align-items: center;
   border-radius: 10px; }
+
+ul {
+  width: 650px;
+  margin: 40px auto;
+  list-style: none; }
+
+li {
+  display: flex; }
+
+li:last-child {
+  border: 0; }
+
+li p {
+  display: block;
+  padding: 20px;
+  line-height: 1.4; }
+
+li p:nth-child(1) {
+  position: relative;
+  padding-right: 25px;
+  font-size: 14px;
+  line-height: 2.5;
+  color: #aaa; }
+
+li p:nth-child(1):after {
+  content: '';
+  position: absolute;
+  top: 28px;
+  right: -17px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 5px solid #999;
+  border-radius: 50%;
+  background: #fff; }
+
+li:first-child p:nth-child(1):after {
+  background: #95e5d3; }
+
+li p:nth-child(2) {
+  flex: 1;
+  font-size: 24px;
+  border-left: 5px solid #999; }
+
+li p span {
+  display: block;
+  margin: 5px 0 0;
+  font-size: 12px;
+  font-style: italic;
+  color: #aaa; }
 
 /*# sourceMappingURL=style.css.map */
