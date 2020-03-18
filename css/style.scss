@@ -59,9 +59,7 @@ main {
     padding: 90px;
 
     > .icons {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
+      font-size: 50px;
     }
   }
 }
@@ -162,8 +160,9 @@ section {
     margin: 40px;
     border-radius: 10px;
     > .project-links {
-      display: flex;
-      justify-content: center;
+      display: inline-block;
+      align-items: flex-end;
+      font-size: 40px;
     }
   }
 
@@ -174,9 +173,9 @@ section {
     border-radius: 10px;
   }
 
-  // experience timeline
+/* experience timeline */
 
-  ul {
+.timeline {
     width: 650px;
     margin: 40px auto;
     list-style: none;
@@ -194,14 +193,15 @@ section {
     display: block;
     padding: 20px;
     line-height: 1.4;
+    font-family: 'Oswald', sans-serif;
   }
   
   li p:nth-child(1) {
     position: relative;
     padding-right: 25px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 2.5;
-    color: $grey;
+    color: black;
   }
   
   li p:nth-child(1):after {
@@ -212,7 +212,7 @@ section {
     display: block;
     width: 20px;
     height: 20px;
-    border: 5px solid #999;
+    border: 5px solid black;
     border-radius: 50%;
     background: #fff;
   }
@@ -224,13 +224,26 @@ section {
   li p:nth-child(2) {
     flex: 1;
     font-size: 24px;
-    border-left: 5px solid #999;
+    border-left: 5px solid black;
   }
   
   li p span {
     display: block;
     margin: 5px 0 0;
-    font-size: 12px;
-    font-style: italic;
-    color: $grey;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+
+  // contact 
+
+  .contact-icons {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
   }
