@@ -1,6 +1,16 @@
 $pink: #ff0060;
 $mint: #95e5d3;
 
+/* oswald-regular - latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/oswald-v31-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/oswald-v31-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -119,10 +129,6 @@ h1 {
   font-size: 80px;
   margin: 0;
   line-height: 80px;
-	/* text-shadow: -1px 1px 2px #000,
-				1px 1px 2px #000,
-				1px -1px 0 #000,
-				-1px -1px 0 #000; */
 }
 
 h2 {
@@ -134,7 +140,7 @@ section {
   background-color: white;
   padding: 30px;
   margin: 0 10px 20px 0;
-  line-height: 1.8;
+  line-height: 1.4;
 }
 
 /* skills section */
@@ -177,13 +183,13 @@ section {
     width: 320px;
     align-items: center;
     border-radius: 10px;
+    padding: 2px;
   }
 
 /* experience timeline */
 
 .timeline {
-    width: 650px;
-    margin: 40px auto;
+    // margin: 40px auto;
     list-style: none;
   }
   
@@ -214,13 +220,17 @@ section {
     content: '';
     position: absolute;
     top: 28px;
-    right: -13px;
+    right: -17px;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border: 5px solid black;
     border-radius: 50%;
     background: #fff;
+  }
+
+  li p:first-of-type {
+    width: 180px;
   }
   
   li:first-child p:nth-child(1):after {
