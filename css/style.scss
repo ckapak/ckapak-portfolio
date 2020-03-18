@@ -1,10 +1,15 @@
 $pink: #ff0060;
 $mint: #95e5d3;
-$grey: #aaa;
 
 * {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
   box-sizing: border-box;
 }
+
 
 html {
   margin: 0;
@@ -208,7 +213,7 @@ section {
     content: '';
     position: absolute;
     top: 28px;
-    right: -17px;
+    right: -13px;
     display: block;
     width: 20px;
     height: 20px;
@@ -241,6 +246,11 @@ section {
     display: inline-block;
     font-size: 18px;
     text-decoration: none;
+
+    span {
+      display: inline-block;
+      margin-left: 12px;
+    }
   }
 
   a {

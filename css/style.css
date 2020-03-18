@@ -1,4 +1,8 @@
 * {
+  margin: 0;
+  padding: 0; }
+
+*, *:before, *:after {
   box-sizing: border-box; }
 
 html {
@@ -163,7 +167,7 @@ li p:nth-child(1):after {
   content: '';
   position: absolute;
   top: 28px;
-  right: -17px;
+  right: -13px;
   display: block;
   width: 20px;
   height: 20px;
@@ -190,6 +194,9 @@ li p span {
   display: inline-block;
   font-size: 18px;
   text-decoration: none; }
+  .contact-icons span {
+    display: inline-block;
+    margin-left: 12px; }
 
 a {
   text-decoration: none;
