@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160989864-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-160989864-1');
+  </script>
 
   <meta charset="UTF-8">
   <title>Christine Kapak - Front End Developer - London</title>
@@ -18,13 +27,64 @@
 
 </head>
 
-<body class="error-background">
+<body>
 
-  <main>
+  <div class="jumbotron"></div>
+
+  <div class="navbar">
+    <ul class="nav-links">
+      <li class="nav-item"><a href="#home">Home</a></li>
+      <li class="nav-item"><a href="#about">About</a></li>
+      <li class="nav-item"><a href="#skills">Skills</a></li>
+      <li class="nav-item"><a href="#projects">Projects</a></li>
+      <li class="nav-item"><a href="#experience">Experience</a></li>
+      <li class="nav-item"><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <a name="home"></a>
+  <main class="main-content">
+
+    <header>
+      <h1>Christine Kapak</h1>
+      <h2>Front-End Developer | Marketing Manager | Ski Enthusiast</h2>
+
+      <div class="icons">
+        <a href="mailto:christinekapak@googlemail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/ckapak/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ckapak" target="_blank"><i class="fab fa-github-square"></i></a>
+      </div>
+
+    </header>
+
+    <section>
+      <h2>Uh, it's a 404 page!</h2>
+      <h3>Sorry - the requested page couldn't be loaded.</h3>
+
+    </section>
+
+    <a name="contact"></a>
+    <section>
+      <h2>Contact</h2>
+      <div class="contact-icons">
+        <p><i class="fas fa-phone-square-alt"></i><span>+44 7752440375</span></p>
+        <p><i class="fas fa-envelope"></i><span><a href="mailto:christinekapak@googlemail.com"
+              target="_blank">christinekapak@googlemail.com</a></span></p>
+
+        <p><i class="fab fa-linkedin"></i><span><a href="https://www.linkedin.com/in/ckapak/"
+              target="_blank">linkedin.com/in/ckapak</a></span></p>
+
+        <p><i class="fab fa-github-square"></i><span><a href="https://github.com/ckapak"
+              target="_blank">github.com/ckapak</a></span></p>
+      </div>
+    </section>
 
     <footer>
       <p>&copy; Christine Kapak</p>
     </footer>
+
   </main>
+
 </body>
+
 </html>
