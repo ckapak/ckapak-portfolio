@@ -11,7 +11,6 @@ $mint: #95e5d3;
        url('../fonts/oswald-v31-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +19,6 @@ $mint: #95e5d3;
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
 
 html {
   margin: 0;
@@ -146,7 +144,7 @@ section {
 
 /* skills section */
 
-.skills {
+.technologies {
   display: inline-block;
   font-size: 80px;
   text-align: center;
@@ -167,8 +165,8 @@ section {
   }
   
   .projects {
-    padding: 30px;
-    width: 385px;
+    padding: 20px;
+    width: 390px;
     background-color: $mint;
     margin: 40px;
     border-radius: 10px;
@@ -252,7 +250,7 @@ section {
     color: black;
   }
 
-  // contact 
+/* contact */
 
   .contact-icons {
     display: inline-block;
@@ -281,3 +279,10 @@ section {
       width: 100vw;
       position: relative;
   }
+
+//   @media screen and (max-width: 640px) {
+
+
+
+
+// }

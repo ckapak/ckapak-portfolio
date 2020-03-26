@@ -196,6 +196,7 @@ li p span {
   font-family: Arial, Helvetica, sans-serif;
   color: black; }
 
+/* contact */
 .contact-icons {
   display: inline-block;
   font-size: 18px;
@@ -207,5 +208,16 @@ li p span {
 a {
   text-decoration: none;
   color: black; }
+
+.error-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../css/404-page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
