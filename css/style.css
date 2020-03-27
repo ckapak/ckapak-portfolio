@@ -108,11 +108,20 @@ section {
   margin: 0 10px 20px 0;
   line-height: 1.4; }
 
-/* skills section */
+/* technologies section */
 .skills {
-  display: inline-block;
-  font-size: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 0 30px; }
+
+.skill-icons {
+  font-size: 4rem;
+  justify-content: space-around;
+  padding: 15px;
   text-align: center; }
+
+.skill-text {
+  font-size: 14px; }
 
 /* projects section */
 .container-projects {
@@ -126,8 +135,8 @@ section {
   justify-content: center; }
 
 .projects {
-  padding: 30px;
-  width: 385px;
+  padding: 20px;
+  width: 380px;
   background-color: #95e5d3;
   margin: 40px;
   border-radius: 10px; }
@@ -138,7 +147,7 @@ section {
 
 .screenshots {
   height: 190px;
-  width: 320px;
+  width: 340px;
   align-items: center;
   border-radius: 10px;
   padding: 2px; }
